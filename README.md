@@ -8,3 +8,4 @@ This repository contains a list of exercises using graph data structure
 - [Count largest component - Undirected graph](04.js)
 - [Shortest path simple BFS - Undirected graph](05.js)
 - [Shortest path simple BFS - Undirected graph - with route display](05.1.js)
+- [Count islands - Undirected graph](06.js)
