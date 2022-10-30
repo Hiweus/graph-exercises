@@ -9,3 +9,4 @@ This repository contains a list of exercises using graph data structure
 - [Shortest path simple BFS - Undirected graph](05.js)
 - [Shortest path simple BFS - Undirected graph - with route display](05.1.js)
 - [Count islands - Undirected graph](06.js)
+- [Minimum island size - Undirected graph](07.js)
