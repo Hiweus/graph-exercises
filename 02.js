@@ -3,6 +3,8 @@ function hasPath(graph, source, destination) {
   const stack = [source]
   while(stack.length > 0) {
     const current = stack.pop()
+    if(visited.has(current)) continue
+
     visited.add(current)
 
     if(current === destination) {
@@ -10,9 +12,7 @@ function hasPath(graph, source, destination) {
     }
 
     for(const neighbor of graph[current]) {
-      if(!visited.has(neighbor)) {
-        stack.push(neighbor)
-      }
+      stack.push(neighbor)
     }
   }
 

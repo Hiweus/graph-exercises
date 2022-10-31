@@ -18,14 +18,13 @@ function getConnectedLand(grid, row, col) {
   while(stack.length > 0) {
     const current = stack.pop()
     const positionKey = `${current.row}-${current.col}`
+    if(visited.has(positionKey)) continue
+    
     visited.add(positionKey)
     for(const neighbor of getNeighbors(grid, current.row, current.col)) {
       
       const isLand = grid[neighbor.row][neighbor.col] === 'L'
       if(!isLand) continue
-
-      const positionKeyNeighbor = `${neighbor.row}-${neighbor.col}`
-      if(visited.has(positionKeyNeighbor)) continue
 
       stack.push(neighbor)
     }
